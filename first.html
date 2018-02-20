@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Music Player</title>
+      <link href="style.css" type="text/css"  rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <script src="jquery-3.2.1.min.js"></script>
+     
+  </head>
+  <body>
+    <div class="row">  
+  <div class="col-md-6 music-player">
+    
+     <div class=" knob-outer">
+              
+              <div class="vol-ind"></div>
+              <div class="knob-inner" id="volume">
+              </div>
+            <div class="minus-vol">-</div>
+            <div class="plus-vol">+</div>
+              
+              <div class="player" id="player">
+                    <div id="duration"></div>
+                    <div class="seekbar" id="seekbar">
+                    <div class="inner-seek"></div>
+                    <div class="inner-knob"></div>
+                  
+                    </div>
+                    <div class="playing">
+                        <ul class="box">
+                            <li><i class="ion-ios-refresh-outline" id="loop"></i>
+                           <li><i class="ion-ios-skipbackward" id="prev"></i></li>
+                              <li><i class="ion-ios-play" id="play"></i></li>
+                             <li><i class="ion-ios-skipforward" id="next"></i></li>
+                             <li><i class="ion-ios-shuffle" id="shuffle"></i></li>
+                        </ul>
+                    </div>
+              </div>
+      </div>
+    
+  </div>
+  <div class="col-md-6 play-list"> 
+  <nav class="navbar navbar-toggleable-md">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" id="toggler"><i class="ion-navicon-round"></i></span>
+  </button>
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-color my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<table class="table table-inverse" id="table">
+  <thead>
+    <tr >
+      <th >#</th>
+      <th>Title</th>
+      <th>Artist</th>
+      <th>Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr song="Sample.mp3">
+      <th scope="row">1</th>
+      <td>Shape of you</td>
+      <td>Ed Sheeran</td>
+      <td>3:54</td>
+    </tr>
+      
+      <tr song="Sample2.mp3">
+      <th scope="row">2</th>
+      <td >Channa Mereya</td>
+      <td>Arijit Singh</td>
+      <td>4:49</td>
+    </tr>
+    <tr song="Sample3.mp3">
+      <th scope="row">3</th>
+      <td>Baarish</td>
+      <td>Ash King, Shashaa Tirupati</td>
+      <td>4:35</td>
+    </tr>
+  </tbody>
+</table>
+        
+        
+    </div>
+
+    </div>         
+         
+  </body>
+    
+    
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+ <script src="script.js"> </script>
+    
+    
+</html>

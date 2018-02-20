@@ -1,0 +1,62 @@
+
+body{
+    
+    
+    background-image: url(img-noise-361x370.png);
+    
+    
+    
+}
+
+.write{
+    
+    height: 500px;
+    text-align: center;
+    font-size: 325%;
+    margin-top: 10%;
+}
+span{
+   
+    font-style: italic;
+    color: aqua;
+    border-color: 1px solid aqua;
+    
+}
+
+.btn-enter{
+    margin-top:250px;
+    margin-left: auto;
+    margin-right: auto;
+    height:  65px;
+    width: 150px;;
+    color: aqua;
+    text-align: center;
+    font-family: monospace;
+    border:4px solid aqua;
+    border-radius: 30%;
+    
+}
+
+.btn-enter div{
+    
+    margin-top: -15px;
+    font-size: 30px;
+}
+
+.btn-enter:hover{
+    
+    cursor: pointer;
+    background-color: aqua;    
+}
+
+.btn-enter div{
+    
+    text-decoration: none;
+    color: aqua;
+    font-size: 75%;
+}
+
+.btn-enter div:hover{
+   
+    color: black;
+}
